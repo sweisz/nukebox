@@ -1,3 +1,9 @@
+:root {
+  --background-color: ;
+  --primary-text: white;
+  --secondary-text: ;
+}
+
 html,
 body {
   padding: 0;
