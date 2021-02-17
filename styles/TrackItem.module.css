@@ -1,0 +1,47 @@
+.img__album {
+  border-radius: 10px;
+  width: 60px;
+  height: 60px;
+}
+.track {
+  border-bottom: 1px solid #5a5f69;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  background-color: #1a2028;
+  margin: 0;
+  padding: 0.5rem;
+}
+.track:hover {
+  background: rgb(18, 20, 23);
+  background: linear-gradient(
+    -90deg,
+    rgb(40, 44, 51) 0%,
+    rgba(93, 113, 140, 1) 100%
+  );
+  transition: 0.5s;
+  cursor: pointer;
+}
+.track__artist,
+.track__title {
+  font-size: 1rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.track__artist {
+  color: #b8b8b8;
+  font-size: 0.8em;
+}
+.track__title {
+  color: #fff;
+  font-size: 0.9em;
+}
+.track__listtext {
+  list-style: none;
+  font-size: 1rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding-left: 18px;
+  margin-top: 12px;
+  margin-bottom: 13px;
+}
