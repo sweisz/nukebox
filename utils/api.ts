@@ -5,9 +5,9 @@ export type APITrack = {
   artist: string;
 };
 
-export async function getTracks(params: type) {
+export async function getTracks() {
   const response = await fetch("/api/tracks");
-  const tracks: Array[] = await response.json();
+  const tracks: APITrack[] = await response.json();
   //   tracks.map(track)
   return tracks;
 }
