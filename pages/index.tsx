@@ -1,21 +1,25 @@
 import Head from "next/head";
+import { useEffect, useState } from "react";
 import Greeting from "../components/Greeting";
 import TrackItem from "../components/TrackItem";
 import styles from "../styles/Home.module.css";
+import { APITrack, getTracks } from "../utils/api";
 
 export default function Home() {
-  const tracks = [
-    {
-      imgSrc: "/zappa_small.png",
-      title: "Strictly Genteel",
-      artist: "Frank Zappa",
-    },
-    {
-      imgSrc: "/zappa_small.png",
-      title: "Muffin Man",
-      artist: "Frank Zappa",
-    },
-  ];
+  const [tracks, setTracks] = useState<APITrack[]>([]);
+
+  useEffect(() => {
+    console.log("Home page is mounted");
+    getTracks().then((newTracks) => {
+      setTracks(newTracks);
+    });
+  });
+
+  // async function doFetch() {
+  //   const newTracks = await getTracks();
+  //   setTracks(newTracks);
+  // }
+  // doFetch()
 
   const trackItems = tracks.map((track) => (
     <TrackItem

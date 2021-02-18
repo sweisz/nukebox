@@ -1,0 +1,22 @@
+{
+  "tracks": [
+    {
+      "id": "Frank-Zappa_Strictly-Genteel",
+      "imgSrc": "/zappa_small.png",
+      "title": "Strictly Genteel",
+      "artist": "Frank Zappa"
+    },
+    {
+      "id": "Frank-Zappa_Muffin-Man",
+      "imgSrc": "/zappa_small.png",
+      "title": "Muffin Man",
+      "artist": "Frank Zappa"
+    },
+    {
+      "id": "Arvo-Pärt_Lamentate",
+      "imgSrc": "/arvo-paert1.jpg",
+      "title": "Lamentate",
+      "artist": "Arvo Pärt"
+    }
+  ]
+}
