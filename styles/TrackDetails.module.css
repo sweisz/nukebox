@@ -1,0 +1,17 @@
+.content {
+  /* display: grid; */
+  text-align: center;
+}
+.img {
+  padding-top: 2em;
+}
+.title {
+  font-size: 2em;
+  padding-top: 0.5em;
+  color: var(--primary-text);
+}
+.artist {
+  font-size: 0.9em;
+  color: var(--secondary-text);
+  padding-top: 0.5em;
+}
