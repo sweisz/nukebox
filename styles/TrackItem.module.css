@@ -34,7 +34,7 @@
     "Lucida Sans", Arial, sans-serif;
 }
 .track__artist {
-  color: #b8b8b8;
+  color: var(--secondary-text);
   font-size: 0.8em;
 }
 .track__title {
