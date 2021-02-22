@@ -9,7 +9,7 @@ type Props = {
 export default function TrackDetails({ imgSrc, title, artist }: Props) {
   return (
     <div className={styles.content}>
-      <img className={styles.img} src={imgSrc} alt="" />
+      <img className={styles.img} src={imgSrc} />
       <div className={styles.title}> {title}</div>
       <div className={styles.artist}> {artist}</div>
     </div>
