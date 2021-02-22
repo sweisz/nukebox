@@ -16,7 +16,6 @@ export default function Track() {
     if (!id) {
       return;
     }
-    // console.log("typeof id is a: " + typeof id);
     getTrack(id).then((newTrack) => {
       setTrack(newTrack);
     });
