@@ -4,6 +4,7 @@ import Greeting from "../components/Greeting";
 import TrackItem from "../components/TrackItem";
 import styles from "../styles/Home.module.css";
 import { APITrack, getTracks } from "../utils/api";
+import Link from "next/link";
 
 export default function Home() {
   const [tracks, setTracks] = useState<APITrack[]>([]);
@@ -13,7 +14,7 @@ export default function Home() {
     getTracks().then((newTracks) => {
       setTracks(newTracks);
     });
-  });
+  }, []);
 
   // async function doFetch() {
   //   const newTracks = await getTracks();
@@ -22,12 +23,16 @@ export default function Home() {
   // doFetch()
 
   const trackItems = tracks.map((track) => (
-    <TrackItem
-      key={`${track.artist}-${track.title}`}
-      imgSrc={track.imgSrc}
-      artist={track.artist}
-      title={track.title}
-    />
+    // <Link href={"/tracks/" + track.id} key={track.id}>
+    <Link href={`/tracks/${track.id}`} key={track.id}>
+      <a>
+        <TrackItem
+          imgSrc={track.imgSrc}
+          artist={track.artist}
+          title={track.title}
+        />
+      </a>
+    </Link>
   ));
 
   return (

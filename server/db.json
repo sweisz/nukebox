@@ -4,19 +4,29 @@
       "id": "Frank-Zappa_Strictly-Genteel",
       "imgSrc": "/zappa_small.png",
       "title": "Strictly Genteel",
-      "artist": "Frank Zappa"
+      "artist": "Frank Zappa",
+      "audio": "/Stefan-Woltran_Hubbard-Human-Race-1990.mp3"
     },
     {
       "id": "Frank-Zappa_Muffin-Man",
       "imgSrc": "/zappa_small.png",
       "title": "Muffin Man",
-      "artist": "Frank Zappa"
+      "artist": "Frank Zappa",
+      "audio": "/Stefan-Woltran_Hubbard-Human-Race-1990.mp3"
     },
     {
       "id": "Arvo-Pärt_Lamentate",
       "imgSrc": "/arvo-paert1.jpg",
       "title": "Lamentate",
-      "artist": "Arvo Pärt"
+      "artist": "Arvo Pärt",
+      "audio": "/Stefan-Woltran_Hubbard-Human-Race-1990.mp3"
+    },
+    {
+      "id": "beastie-boys_Sabotage",
+      "imgSrc": "/beastie-boys_sabotage.jpeg",
+      "title": "Sabotage",
+      "artist": "Beastie Boys",
+      "audio": "/Stefan-Woltran_Hubbard-Human-Race-1990.mp3"
     }
   ]
 }

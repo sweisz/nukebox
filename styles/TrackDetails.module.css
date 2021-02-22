@@ -1,0 +1,19 @@
+.content {
+  text-align: center;
+}
+.img {
+  border: none;
+  border-radius: 26px;
+  margin: 2em 1em;
+  width: 90%;
+}
+.title {
+  font-size: 2em;
+  padding-top: 0.5em;
+  color: var(--primary-text);
+}
+.artist {
+  font-size: 0.9em;
+  color: var(--secondary-text);
+  padding-top: 0.5em;
+}
