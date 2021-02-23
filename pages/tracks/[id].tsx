@@ -30,7 +30,6 @@ export default function Track() {
       <header className={styles.header}>
         <Navigation />
       </header>
-
       <main>
         <TrackDetails
           imgSrc={track.imgSrc}

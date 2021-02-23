@@ -25,6 +25,12 @@ export default function AudioPlayer({ audio }: Props) {
     }
   }, [isPlaying]);
 
+  useEffect(() => {
+    return () => {
+      audioElement.pause();
+    };
+  }, []);
+
   return (
     <div className={styles.audioPlayer}>
       <input
