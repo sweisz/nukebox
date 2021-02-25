@@ -1,0 +1,16 @@
+### GET HTML of index page
+GET http://localhost:3000
+
+### GET HTML of track page
+GET http://localhost:3000/tracks/Frank-Zappa_Strictly-Genteel
+
+### GET all tracks
+GET http://localhost:3000/api/tracks/
+
+### GET one track
+
+GET http://localhost:3000/api/tracks/Frank-Zappa_Strictly-Genteel
+
+
+### Delete a single track
+DELETE http://localhost:3000/api/tracks/Frank-Zappa_Strictly-Genteel
