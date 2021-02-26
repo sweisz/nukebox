@@ -1,6 +1,4 @@
-import { Router } from "next/router";
 import styles from "../styles/TrackDetails.module.css";
-import { deleteTrack } from "../utils/api";
 
 type Props = {
   id: string;

@@ -21,10 +21,10 @@ export default function Track() {
     });
   }, [id]);
 
-  const handleDeleteClick = async () => {
-    await deleteTrack(track.id);
-    router.back();
-  };
+  // const handleDeleteClick = async () => {
+  //   await deleteTrack(track.id);
+  //   router.back();
+  // };
 
   if (!track) {
     return <div>Loading...</div>;
