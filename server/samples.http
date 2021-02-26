@@ -14,3 +14,16 @@ GET http://localhost:3000/api/tracks/Frank-Zappa_Strictly-Genteel
 
 ### Delete a single track
 DELETE http://localhost:3000/api/tracks/Frank-Zappa_Strictly-Genteel
+
+
+### POST a new track
+POST http://localhost:3000/api/tracks/
+Content-Type: application/json
+
+{
+    "id": "Frank-Zappa_Strictly-Genteel",
+    "imgSrc": "/zappa_small.png",
+    "title": "Strictly Genteel",
+    "artist": "Frank Zappa",
+    "audio": "/Stefan-Woltran_Hubbard-Human-Race-1990.mp3"
+}
