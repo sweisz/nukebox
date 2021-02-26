@@ -17,3 +17,10 @@ export async function getTrack(id) {
   const track: APITrack = await response.json();
   return track;
 }
+
+export async function deleteTrack(id) {
+  // await fetch("/api/tracks/" + id, {
+  await fetch(`/api/tracks/${id}`, {
+    method: "DELETE",
+  });
+}

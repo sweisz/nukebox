@@ -47,3 +47,15 @@
 .trackpagetitle {
   color: lime;
 }
+.delete {
+  background: red;
+  border: none;
+  border-radius: 32px;
+  color: white;
+  font-weight: bold;
+  margin-top: 2em;
+  padding: 1em;
+}
+.delete:hover {
+  background: #000;
+}
