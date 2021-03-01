@@ -27,6 +27,20 @@
       "title": "Sabotage",
       "artist": "Beastie Boys",
       "audio": "/Stefan-Woltran_Hubbard-Human-Race-1990.mp3"
+    },
+    {
+      "id": "Zwei_Test",
+      "imgSrc": "https://picsum.photos/id/1011/5472/3648",
+      "title": "Test",
+      "artist": "Zwei",
+      "audio": "nix"
+    },
+    {
+      "id": "a_t",
+      "imgSrc": "https://picsum.photos/id/1020/367/267",
+      "title": "t",
+      "artist": "a",
+      "audio": "nix"
     }
   ]
 }

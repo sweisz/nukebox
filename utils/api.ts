@@ -24,3 +24,12 @@ export async function deleteTrack(id) {
     method: "DELETE",
   });
 }
+
+export async function addTrack(data) {
+  const response = fetch("http://localhost:3000/api/tracks", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(data),
+  });
+  return response;
+}

@@ -1,10 +1,11 @@
 import Head from "next/head";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Greeting from "../components/Greeting";
 import TrackItem from "../components/TrackItem";
 import styles from "../styles/Home.module.css";
 import { APITrack, getTracks } from "../utils/api";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function Home() {
   const [tracks, setTracks] = useState<APITrack[]>([]);
@@ -35,6 +36,8 @@ export default function Home() {
     </Link>
   ));
 
+  const router = useRouter();
+
   return (
     <div className={styles.container}>
       <Head>
@@ -43,6 +46,9 @@ export default function Home() {
       </Head>
       <Greeting name="Friend" />
       <ul className={styles.list}>{trackItems}</ul>
+      <button className={styles.btnNew} onClick={() => router.push("/new")}>
+        Create a New Entry
+      </button>
     </div>
   );
 }

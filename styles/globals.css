@@ -2,6 +2,8 @@
   --background-color: #1a2028;
   --primary-text: #fff;
   --secondary-text: #e0e0e0a6;
+  --primary-background: rgb(55, 55, 110);
+  --info-background: #00c0ffb5;
 }
 
 html,

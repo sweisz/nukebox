@@ -12,6 +12,11 @@ export default function Track() {
 
   const [track, setTrack] = useState<APITrack>(null);
 
+  const handleDeleteClick = async () => {
+    await deleteTrack(id);
+    router.back();
+  };
+
   useEffect(() => {
     if (!id) {
       return;
@@ -20,11 +25,6 @@ export default function Track() {
       setTrack(newTrack);
     });
   }, [id]);
-
-  // const handleDeleteClick = async () => {
-  //   await deleteTrack(track.id);
-  //   router.back();
-  // };
 
   if (!track) {
     return <div>Loading...</div>;
@@ -44,7 +44,7 @@ export default function Track() {
         />
       </main>
       <div>
-        <button className={styles.delete} onClick={() => deleteTrack(id)}>
+        <button className={styles.delete} onClick={handleDeleteClick}>
           DELETE ! TRACK
         </button>
       </div>
